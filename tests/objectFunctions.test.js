@@ -52,59 +52,59 @@ describe("objectValues()", () => {
 
 });
 
-// describe("objKeyCheck()", () => {
+describe("objKeyCheck()", () => {
 
-//     const testObj = {
-//         name: 'Landon',
-//         age: 33,
-//         eyeColor: 'blue',
-//         father: true,
-//         children: [
-//             {
-//                 name: 'Child1',
-//                 age: 6,
-//                 eyeColor: 'blue',
-//                 father: false,
-//             },
-//             {
-//                 name: 'Child2',
-//                 age: 2,
-//                 eyeColor: 'green',
-//                 father: false,
-//             },
-//         ]
-//     }
+    const testObj = {
+        name: 'Landon',
+        age: 33,
+        eyeColor: 'blue',
+        father: true,
+        children: [
+            {
+                name: 'Child1',
+                age: 6,
+                eyeColor: 'blue',
+                father: false,
+            },
+            {
+                name: 'Child2',
+                age: 2,
+                eyeColor: 'green',
+                father: false,
+            },
+        ]
+    }
 
-//     it("should return true when the key is in the object", () => {
-//         expect(objKeyCheck( testObj, 'age' )).toBeTruthy();
-//     });
+    it("should return true when the key is in the object", () => {
+        expect(objKeyCheck( testObj, 'age' )).toBeTruthy();
+    });
 
-//     it("should return false when the key isn't in the object", () => {
-//         expect(objKeyCheck( testObj, 'height' )).toBeFalsy();
-//     });
+    it("should return false when the key isn't in the object", () => {
+        expect(objKeyCheck( testObj, 'height' )).toBeFalsy();
+    });
 
-// });
+});
 
-// describe("objToArray()", () => {
+describe("objToArray()", () => {
 
-//     const testObj1 = {
-//         name: 'Landon',
-//         age: 33,
-//         eyeColor: 'blue',
-//         father: true
-//     }
+    const testObj1 = {
+        name: 'Landon',
+        age: 33,
+        eyeColor: 'blue',
+        father: true
+    }
 
-//     const testObj2 = {
-//         name: 'Joe',
-//         age: 22
-//     }
+    const testObj2 = {
+        name: 'Joe',
+        age: 22
+    }
 
-//     it("should return an array of arrays", () => {
-//         expect(objToArray( testObj1 )).toEqual([['name', 'Landon'],['age', 33],['eyeColor','blue'],['father', true]]);
-//     });
+    it("should return an array of arrays", () => {
+        expect(objToArray( testObj1 )).toEqual([['name', 'Landon'],['age', 33],['eyeColor','blue'],['father', true]]);
+    });
 
-//     it("should return an array of arrays", () => {
-//         expect(objToArray( testObj2 )).toEqual([['name', 'Joe'],['age', 22]]);
-//     });
+    it("should return an array of arrays", () => {
+        expect(objToArray( testObj2 )).toEqual([['name', 'Joe'],['age', 22]]);
+    });
 
-// });
+});

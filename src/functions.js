@@ -30,9 +30,9 @@ return num1 + num2
 function otherFunction(mess) {
     return mess + " hello"
 }
- function setFun(fun){
+ function setFunc(func){
 setTimeout(() => {
-   console.log(fun)
+   console.log(func)
 }, 2000);
 }
      
@@ -52,8 +52,8 @@ let promisePrac = new Promise(() => {
 // by a static number that was passed to the orginal function.
 // id if I called the main function with a parameter of 2, it would return a new function that would multiply any number passed to the new function by 2
 
-function newFun( param ) {
-    return function secondFun() {
+function newFunc( param ) {
+    return function secondFunc() {
       param * 2;
     }
   }
@@ -65,9 +65,13 @@ function newFun( param ) {
 //well documented code is always helpful.
 //5 points extra credit if you format the console.log messages.
 
+// part 1
 wayOne()
 wayTwo()
 wayThree()
-setFun(otherFunction())
+// part 2
+setFunc(otherFunction())
+// part 3
 console.log(promisePrac)
-newFun(2)
+// part 4
+newFunc(2)
